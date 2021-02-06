@@ -37,16 +37,11 @@
        //Question 2 D
        //Create a new navbar with copyright
 
-       //Create the new elements and references
        let newNavBar = document.createElement("nav");
        let main = document.getElementById("main");
        let navText = document.createElement("h2");
-
-       //Change the inner html of the new text item
-       navText.innerHTML = "&copy; Copyright 2021"
-       //Change the class of the new nav bar
-       newNavBar.className = "navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark"
-       //Append the new nodes
+       navText.textContent = "\U+000A9 Copyright 2021";
+       newNavBar.className = "navbar navbar-expand-lg fixed-bottom navbar-light bg-light"
        newNavBar.appendChild(navText);
        main.appendChild(newNavBar);
       

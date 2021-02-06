@@ -45,7 +45,7 @@
        //Change the inner html of the new text item
        navText.innerHTML = "&copy; Copyright 2021"
        //Change the class of the new nav bar
-       newNavBar.className = "navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark"
+       newNavBar.className = "navbar navbar-expand-lg fixed-bottom navbar-light bg-light"
        //Append the new nodes
        newNavBar.appendChild(navText);
        main.appendChild(newNavBar);
