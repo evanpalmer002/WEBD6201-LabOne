@@ -3,19 +3,11 @@ body, html {
 }
 
 .bg {
-    background-image: url("../images/background.jpg");
+    background-image: url("background.jpg");
 
     height: 100%;
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-h1 {
-    color:   #cce0ff;
-}
-
-h4 {
-    color:   #cce0ff;
 }
