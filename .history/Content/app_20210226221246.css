@@ -11,7 +11,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.alert, alert-danger
+.alert alert-danger
 {
     text-align: center;
 }

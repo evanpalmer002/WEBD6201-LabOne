@@ -96,23 +96,13 @@ Date Completed: 2/5/2021
         function displayLogin()
         {
             console.log("Login Page"); //Check to make sure the case/switch is working
-            let userText = document.createElement("span");
-            userText.className = "navbar-text";
-            $("#submitButton").on("click", (event)=> 
-            {
-              let username = $("#userName").val();
-              console.log(username);
-              userText.textContent = username;
-              console.log(userText);
-              navBar.appendChild(userText);
-            });
         }
 
         function displayRegister()
         {
             console.log("Register Page"); //Check to make sure the case/switch is working
             //Append the messageArea to main
-            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger"></div>'); 
+            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger">PagMan</div>'); 
 
             formValidation();
         }

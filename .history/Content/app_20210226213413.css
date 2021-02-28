@@ -11,10 +11,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.alert, alert-danger
-{
-    text-align: center;
-}
+
 h1 {
     color:   #cce0ff;
     text-align: center;

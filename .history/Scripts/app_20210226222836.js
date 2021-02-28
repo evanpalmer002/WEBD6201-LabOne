@@ -96,23 +96,13 @@ Date Completed: 2/5/2021
         function displayLogin()
         {
             console.log("Login Page"); //Check to make sure the case/switch is working
-            let userText = document.createElement("span");
-            userText.className = "navbar-text";
-            $("#submitButton").on("click", (event)=> 
-            {
-              let username = $("#userName").val();
-              console.log(username);
-              userText.textContent = username;
-              console.log(userText);
-              navBar.appendChild(userText);
-            });
         }
 
         function displayRegister()
         {
             console.log("Register Page"); //Check to make sure the case/switch is working
             //Append the messageArea to main
-            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger"></div>'); 
+            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger">PagMan</div>'); 
 
             formValidation();
         }
@@ -162,46 +152,11 @@ Date Completed: 2/5/2021
         }
         function testEmailAddress()
         {
-          let emailPattern = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
-          let messageArea = $("#messageArea");
-    
-            // form validation
-            $("#emailAddress").on("blur", function()
-            {
-              if(emailPattern.test($(this).val()))
-              {
-                console.log("Passed!");
-                messageArea.removeAttr("class").hide();
-              }
-              else
-              {
-                console.log("Failed!");
-                $(this).trigger("focus").trigger("select");
-                messageArea.show().addClass("alert alert-danger").text("Please enter an appropriate Email Address");
-              }
-    
-            });
-    
+
         }
         function testPassword()
         {
-            let passwordPattern = /^[a-z]{6,16}/;
-            let messageArea = $("#messageArea").hide();
 
-            $("#password").on("blur", function()
-            {
-                if(passwordPattern.test($(this).val()))
-                {
-                  console.log("Passed!");
-                  messageArea.removeAttr("class").hide();
-                }
-                else
-                {
-                    console.log("Failed!");
-                    $(this).trigger("focus").trigger("select");
-                    messageArea.show().addClass("alert alert-danger").text("Please enter an appropriate password. 6-16 characters long");
-                }
-            });
         }
         function formValidation()
         {

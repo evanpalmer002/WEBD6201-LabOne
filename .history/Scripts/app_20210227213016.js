@@ -104,7 +104,7 @@ Date Completed: 2/5/2021
               console.log(username);
               userText.textContent = username;
               console.log(userText);
-              navBar.appendChild(userText);
+              
             });
         }
 
@@ -112,7 +112,7 @@ Date Completed: 2/5/2021
         {
             console.log("Register Page"); //Check to make sure the case/switch is working
             //Append the messageArea to main
-            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger"></div>'); 
+            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger">PagMan</div>'); 
 
             formValidation();
         }

@@ -96,23 +96,13 @@ Date Completed: 2/5/2021
         function displayLogin()
         {
             console.log("Login Page"); //Check to make sure the case/switch is working
-            let userText = document.createElement("span");
-            userText.className = "navbar-text";
-            $("#submitButton").on("click", (event)=> 
-            {
-              let username = $("#userName").val();
-              console.log(username);
-              userText.textContent = username;
-              console.log(userText);
-              navBar.appendChild(userText);
-            });
         }
 
         function displayRegister()
         {
             console.log("Register Page"); //Check to make sure the case/switch is working
             //Append the messageArea to main
-            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger"></div>'); 
+            $('#contentArea').prepend('<div id="messageArea" class="alert alert-danger">PagMan</div>'); 
 
             formValidation();
         }
@@ -163,7 +153,7 @@ Date Completed: 2/5/2021
         function testEmailAddress()
         {
           let emailPattern = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
-          let messageArea = $("#messageArea");
+          let messageArea = $("#messageArea").hide();
     
             // form validation
             $("#emailAddress").on("blur", function()
@@ -185,10 +175,10 @@ Date Completed: 2/5/2021
         }
         function testPassword()
         {
-            let passwordPattern = /^[a-z]{6,16}/;
+            let passwordNamePattern = /^[A-Z][a-z]{6,16}/;
             let messageArea = $("#messageArea").hide();
 
-            $("#password").on("blur", function()
+            $("#firstName").on("blur", function()
             {
                 if(passwordPattern.test($(this).val()))
                 {
