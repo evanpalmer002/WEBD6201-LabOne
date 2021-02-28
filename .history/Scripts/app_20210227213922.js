@@ -3,17 +3,6 @@ Name: Evan Palmer
 Student ID: 100699087
 Date Completed: 2/5/2021
  */
-class User 
-{
-  constructor(firstName, lastName, email, password)
-  {
-    this.firstName = firstName;
-    this.lastName  = lastName;
-    this.email = email;
-    this.password = password;
-
-  }
-}
 
  (function () {
     
@@ -130,14 +119,6 @@ class User
             $("#submitButton").on("click", (event)=>
             {
               event.preventDefault();
-              let firstName = $("#firstName").val();
-              let lastName = $("#lastName").val();
-              let email = $("#emailAddress").val();
-              let password = $("#password").val();
-
-              let user = new User(firstName, lastName, email, password);
-              console.log(user);
-              document.getElementById("registerForm").reset();
             });
         }
         

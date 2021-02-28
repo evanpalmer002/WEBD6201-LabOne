@@ -5,10 +5,11 @@ Date Completed: 2/5/2021
  */
 class User 
 {
-  constructor(firstName, lastName, email, password)
+  constructor(firstName, lastName, username, email, password)
   {
     this.firstName = firstName;
     this.lastName  = lastName;
+    this.username = username;
     this.email = email;
     this.password = password;
 
@@ -130,14 +131,6 @@ class User
             $("#submitButton").on("click", (event)=>
             {
               event.preventDefault();
-              let firstName = $("#firstName").val();
-              let lastName = $("#lastName").val();
-              let email = $("#emailAddress").val();
-              let password = $("#password").val();
-
-              let user = new User(firstName, lastName, email, password);
-              console.log(user);
-              document.getElementById("registerForm").reset();
             });
         }
         

@@ -137,7 +137,6 @@ class User
 
               let user = new User(firstName, lastName, email, password);
               console.log(user);
-              document.getElementById("registerForm").reset();
             });
         }
         

@@ -129,15 +129,13 @@ class User
 
             $("#submitButton").on("click", (event)=>
             {
-              event.preventDefault();
               let firstName = $("#firstName").val();
               let lastName = $("#lastName").val();
               let email = $("#emailAddress").val();
               let password = $("#password").val();
 
-              let user = new User(firstName, lastName, email, password);
-              console.log(user);
-              document.getElementById("registerForm").reset();
+              let user = new User()
+              event.preventDefault();
             });
         }
         
